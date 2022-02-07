@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
+/* ----------------------------------- */
+/* Reset                               */
+/* ----------------------------------- */
+
 *,
 ::before,
 ::after {
@@ -8,8 +12,24 @@
   box-sizing: border-box;
 }
 
+/* ----------------------------------- */
+/* Generals                            */
+/* ----------------------------------- */
+
 body {
   height: 100vh;
 
   font-family: "Josefin Sans", sans-serif;
+}
+
+.hero-desktop {
+  display: none;
+}
+
+/* ----------------------------------- */
+/* Desktop Media Queries               */
+/* ----------------------------------- */
+
+.hero-mobile {
+  display: none;
 }
