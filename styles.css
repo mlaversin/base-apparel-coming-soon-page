@@ -12,6 +12,16 @@
   box-sizing: border-box;
 }
 
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 /* ----------------------------------- */
 /* Custom properties                   */
 /* ----------------------------------- */
@@ -159,7 +169,6 @@ button:hover {
   background: hsl(0, 77%, 83%);
 }
 
-
 .error-icon {
   display: none;
   /* position: absolute; */
@@ -173,8 +182,85 @@ button:hover {
 /* Desktop Media Queries               */
 /* ----------------------------------- */
 
-/*  
-.hero-mobile {
-  display: none;
+@media screen and (min-width: 1100px) {
+  body {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  main {
+    width: 57.6vw;
+
+    background-image: url("./images/bg-pattern-desktop.svg");
+  }
+
+  .hero-mobile {
+    display: none;
+  }
+  .hero-desktop {
+    display: block;
+    width: 42.4vw;
+    height: 100vh;
+
+    background-image: url("./images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .logo {
+    margin: 4rem 10.3rem;
+  }
+  .logo img {
+    width: 9.875rem;
+    height: 2rem;
+  }
+
+  .container {
+    display: block;
+    padding: 4rem 13.8rem 4rem 10.3rem;
+  }
+
+  h1 {
+    margin: 0;
+
+    text-align: left;
+    font-size: 4rem;
+    line-height: 4.4rem;
+    letter-spacing: 1.1rem;
+  }
+  h1 span {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .message {
+    margin: 0;
+    padding: 1.2rem 0;
+
+    text-align: left;
+    font-size: 0.938rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.02rem;
+  }
+
+  form {
+    margin: 1.4rem 0;
+    width: 100%;
+  }
+
+  input[type="email"] {
+    height: 3.5rem;
+    padding: 0 2rem;
+  }
+  ::placeholder {
+    font-size: 1rem;
+  }
+  ::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 5.8rem;
+    height: 3.5rem;
+  }
 }
-*/
