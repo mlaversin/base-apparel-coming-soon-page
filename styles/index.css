@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+/* ----------------------------------- */
+/* Reset                               */
+/* ----------------------------------- */
+
+html,
+body,
+div,
+span,
+h1,
+p,
+a,
+small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+/* ----------------------------------- */
+/* Variables                           */
+/* ----------------------------------- */
+
+:root {
+  --very-desaturated-red: hsla(0, 36%, 70%, 0.5);
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --bg-gr: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --button-gr: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+/* ----------------------------------- */
+/* Generals                            */
+/* ----------------------------------- */
+
+body {
+  width: 100vw;
+  min-width: 375px;
+  height: 100vh;
+
+  background: var(--bg-gr);
+
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+/* ----------------------------------- */
+/* Mobile                              */
+/* ----------------------------------- */
