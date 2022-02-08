@@ -100,8 +100,8 @@ h1 span {
 /* form */
 
 form {
-  margin-top: 2rem;
-  width: 100%;
+  margin: 2rem;
+  width: 84%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -109,16 +109,16 @@ form {
 
 input[type="email"] {
   padding: 0 1.4rem;
-  width: 82vw;
+  width: 100%;
   height: 3rem;
-  position: relative;
+  /* position: relative; */
   z-index: 0;
 
   border: 1.8px solid var(--very-desaturated-red);
+  border-radius: 2rem;
 
   background-color: transparent;
 
-  border-radius: 2rem;
   font-family: inherit;
   font-size: 0.85rem;
   color: var(--desaturated-red);
@@ -140,23 +140,29 @@ input[type="email"]:focus {
 }
 
 button {
-  margin-left: -3.7rem;
-  padding: 0 1.6rem;
-  border-radius: 2rem;
-  border: 0;
-  background: var(--button-gr);
-  box-shadow: 0px 15px 24px rgba(206, 151, 151, 0.432);
-  position: relative;
+  padding: 0.75rem;
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 1;
+
+  border-radius: 2rem;
+  border: none;
+
+  background: var(--button-gr);
+
+  box-shadow: 0px 15px 24px rgba(206, 151, 151, 0.432);
   cursor: pointer;
 }
-
 button:hover {
   background: hsl(0, 77%, 83%);
 }
 
+
 .error-icon {
   display: none;
+  /* position: absolute; */
 }
 
 .error-text {
