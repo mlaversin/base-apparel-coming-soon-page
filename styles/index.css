@@ -20,19 +20,6 @@ small {
   vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
 body {
   line-height: 1;
 }
@@ -65,6 +52,3 @@ body {
   font-size: 1rem;
 }
 
-/* ----------------------------------- */
-/* Mobile                              */
-/* ----------------------------------- */

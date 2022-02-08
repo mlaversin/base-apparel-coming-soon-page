@@ -1,3 +1,12 @@
+/* generals */
+
+main {
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 /* logo */
 
 .logo {
@@ -15,7 +24,8 @@ display: none;
 }
 .hero-mobile {
 background: no-repeat center url("../images/hero-mobile.jpg");
-height: 15.625rem;
+background-size: contain;
+min-height: 15.625rem;
 }
 
 /* heading and message */
@@ -26,6 +36,7 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 }
+
 h1 {
 margin: 4rem auto 1rem;
 
@@ -33,7 +44,7 @@ text-align: center;
 text-transform: uppercase;
 font-size: 2.5rem;
 font-weight: 600;
-line-height: 2.65rem;
+line-height: 2.6rem;
 letter-spacing: 0.7rem;
 color: var(--dark-grayish-red);
 }
@@ -42,6 +53,7 @@ font-size: 2.5rem;
 font-weight: 300;
 color: var(--desaturated-red);
 }
+
 .message {
 margin: 0 2.4rem;
 
@@ -96,6 +108,7 @@ border: 1.8px solid var(--desaturated-red);
 button {
 padding: 0.8rem;
 width: 4rem;
+height: 3rem;
 position: absolute;
 top: 0;
 right: 0;
