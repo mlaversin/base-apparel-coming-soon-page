@@ -25,7 +25,7 @@ body {
 }
 
 /* ----------------------------------- */
-/* Variables                           */
+/* Root                                */
 /* ----------------------------------- */
 
 :root {
@@ -35,6 +35,9 @@ body {
   --dark-grayish-red: hsl(0, 6%, 24%);
   --bg-gr: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --button-gr: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --button-hover: linear-gradient(135deg, hsl(358, 89%, 93%), hsl(0, 83%, 88%));
+
+  font-size: 100%;
 }
 
 /* ----------------------------------- */
@@ -51,4 +54,3 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
 }
-
