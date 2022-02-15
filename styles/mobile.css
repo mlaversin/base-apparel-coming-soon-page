@@ -131,7 +131,7 @@ button:hover {
 /* form error */
 
 form.error input[type="email"] {
-	border: 3px solid var(--soft-red);
+	border: 2px solid var(--soft-red);
 }
 
 .error-icon {
