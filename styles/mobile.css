@@ -10,7 +10,7 @@ main {
 /* logo */
 
 .logo {
-  margin: 1.95rem 2rem 1.8rem;
+  margin: 1.8rem 2rem 1.8rem;
 }
 .logo img {
   width: 6.25rem;
@@ -87,7 +87,7 @@ input[type="email"] {
 
   font-family: inherit;
   font-size: 0.85rem;
-  color: var(--desaturated-red);
+  color: var(--dark-grayish-red);
 }
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -104,6 +104,7 @@ input[type="email"]:focus {
   outline: none;
   border: 1.8px solid var(--desaturated-red);
 }
+
 
 button {
   padding: 0.8rem;
@@ -127,11 +128,35 @@ button:hover {
   box-shadow: 0px 18px 30px hsla(0, 36%, 70%, 0.575);
 }
 
+/* form error */
+
+form.error input[type="email"] {
+	border: 3px solid var(--soft-red);
+}
+
 .error-icon {
   display: none;
-  /* position: absolute; */
+  position: absolute;
+  top: 1.4rem;
+  right: 5rem;
+  transform: translateY(-50%);
+}
+
+form.error .error-icon {
+	display: block;
 }
 
 .error-text {
   display: none;
+  position: absolute;
+  left: 1.6rem;
+  bottom: -1.4rem;
+  
+  color: var(--soft-red);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+form.error .error-text {
+	display: block;
 }
