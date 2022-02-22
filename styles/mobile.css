@@ -10,11 +10,11 @@ main {
 /* logo */
 
 .logo {
-  margin: 1.8rem 2rem 1.8rem;
+  padding: 1.8rem 2rem;
 }
 .logo img {
   width: 6.25rem;
-  height: 1.25rem;
+  height: 1.375rem;
 }
 
 /* hero */
@@ -32,9 +32,9 @@ main {
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
 }
 
 h1 {
@@ -49,7 +49,6 @@ h1 {
   color: var(--dark-grayish-red);
 }
 h1 span {
-  font-size: 2.5rem;
   font-weight: 300;
   color: var(--desaturated-red);
 }
